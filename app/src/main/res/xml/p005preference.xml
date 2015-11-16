@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference android:title="Cool Name"
+        android:key="editTextPreferenceName2"
+        android:summary="please, enter your name">
+    </EditTextPreference>
+    <CheckBoxPreference android:title="Music On/Off"
+        android:key="checkBoxPreferenceMusic2"
+        android:summary="please, select your music preference"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+    <ListPreference android:title="List of transport"
+        android:summary="please, select your transport choices"
+        android:key="listPreferenceTransport"
+        android:entries="@array/name2"
+        android:entryValues="@array/values2">
+    </ListPreference>
+</PreferenceScreen>

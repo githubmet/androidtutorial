@@ -1,0 +1,79 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kkldfkld.myapplication.P005NormalMenuItem">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_bucky"
+            android:title="006699"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            />
+
+        <item
+            android:id="@+id/menu_green"
+            android:title="009900"
+            android:orderInCategory="2"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_acikmavi"
+            android:title="b0c4de"
+            android:orderInCategory="3"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_dag"
+            android:title="dag"
+            android:orderInCategory="4"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_ay"
+            android:title="ay"
+            android:orderInCategory="5"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_sol"
+            android:title="sol"
+            android:orderInCategory="6"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_activity"
+            android:title="activity"
+            android:orderInCategory="7"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_activity2"
+            android:title="activity2"
+            android:orderInCategory="8"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_toast"
+            android:title="toast"
+            android:orderInCategory="9"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_toastClass"
+            android:title="toastClass"
+            android:orderInCategory="10"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/menu_preference"
+            android:orderInCategory="11"
+            android:title="Preferences"
+            app:showAsAction="never"
+            />
+    </group>
+
+</menu>
+

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+
+    <string name="hello_world">Merhaba Dunya!</string>
+    <string name="action_settings">Ayarlar</string>
+
+    <string name="hello">Merhaba dunya, baslangic noktasi</string>
+    <string name="hello_world2">Merhaba dunya2!</string>
+
+    <string name="wanna_text">Seninle birlikte yol almak istiyorum</string>
+    <string name="dontwanna_text">Senin dusmeni izin vermeyecegim</string>
+</resources>

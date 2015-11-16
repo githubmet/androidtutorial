@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:onClick="onClickMtd2P006">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Abouth Us"
+        android:id="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewNameP006"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Name from Preference " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewSurnameP006"
+        android:layout_below="@+id/textViewNameP006"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Surname from Preference  " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditTextPreference bilgisi PreferenceManager"
+        android:id="@+id/button9"
+        android:layout_below="@+id/textViewSurnameP006"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickMtdP006" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBoxPreference secimi .getDefaultSharedPreferences "
+        android:id="@+id/button10"
+        android:layout_below="@+id/button9"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickMtd2P006" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListBoxPreference secimi getBaseContext()"
+        android:id="@+id/button11"
+        android:layout_below="@+id/button10"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickMtd3P006" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SharedPreferences"
+        android:id="@+id/button12"
+        android:layout_below="@+id/button11"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickMtd4P006" />
+</RelativeLayout>

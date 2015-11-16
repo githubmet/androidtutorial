@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="Cool Name"
+        android:summary="Please, enter your name"
+        android:key="editTextPreferenceName"
+        />
+    <EditTextPreference
+        android:title="Cool Surname"
+        android:summary="Please, enter your Surname"
+        android:key="editTextPreferenceSurname"
+        />
+    <CheckBoxPreference
+        android:title="Confirm your music choice"
+        android:defaultValue="true"
+        android:summary="The music turn on or off"
+        android:key="musicOn"
+        />
+    <ListPreference
+        android:title="Your app list table"
+        android:summary="This list your list"
+        android:key="listPreference"
+        android:entries="@array/name"
+        android:entryValues="@array/value"
+        />
+
+</PreferenceScreen>
+
+    <!--android:entries="@array/list"       @p16array/list olarak degil dikkat tipki @string gibi-->
+    <!--android:entryValues="@array/lValues" @p16array/list olarak degil dikkat tipki @string gibi-->
+

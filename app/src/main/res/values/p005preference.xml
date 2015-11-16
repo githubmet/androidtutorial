@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="name2">
+        <item>2 teker</item>
+        <item>4 teker</item>
+        <item>10 teker</item>
+    </string-array>
+    <string-array name="values2">
+        <item>Bisiklet</item>
+        <item>Otomobil</item>
+        <item>Kamyon</item>
+    </string-array>
+
+
+</resources>

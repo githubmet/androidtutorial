@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="CheckBoxPreferenceTextMode"
+        android:title="Specify Text Mode"
+        android:summary="Please, check the checkBox if you want to write bold"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="ListPrefernceTextSize"
+        android:title="Specify Text Size"
+        android:summary="Please, select text size"
+        android:entries="@array/text_size_name2"
+        android:entryValues="@array/text_size_value2"
+        android:defaultValue="16" />
+
+</PreferenceScreen>

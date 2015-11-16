@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/buttonLoadP028"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickLoadMtdP028" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Activity"
+        android:id="@+id/buttonPreviousP028"
+        android:layout_alignBottom="@+id/buttonLoadP028"
+        android:layout_toRightOf="@+id/buttonLoadP028"
+        android:layout_toEndOf="@+id/buttonLoadP028"
+        android:onClick="onClickPreviousMtdP028" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Name"
+        android:id="@+id/textViewNameP028"
+        android:layout_below="@+id/buttonLoadP028"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Password"
+        android:id="@+id/textViewPasswordP028"
+        android:layout_below="@+id/textViewNameP028"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
