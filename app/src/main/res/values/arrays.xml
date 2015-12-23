@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="activity_names">
+        <item>P001ListActivity_extends_Activity</item>
+        <item>P001ListActivity2_extends_ListActivity</item>
+        <item>P002Intent</item>
+        <item>P003TextPlay</item>
+        <item>P004SetInputType</item>
+        <item>P005NormalMenuItem</item>
+        <item>P005PreferenceGetInfo</item>
+        <item>P006CoolMenuItem</item>
+        <item>P006PreferencesGetInfo</item>
+        <item>P007CreateUserFaceOnlyJavaCode</item>
+        <item>P007CreateUserFaceOnlyJavaCode2</item>
+        <item>P008GridLayout_Implements_View_OnClickListener</item>
+        <item>P009ListViewCustomRow</item>
+        <item>P010GestureDetectorCompat</item>
+        <item>P011NotificationCompatBuilder</item>
+        <item>P012SharedPreferences</item>
+        <item>P013DrawableBitmapLayerDrawable</item>
+        <item>P014EmailTasarim</item>
+        <item>P015RadioGroup</item>
+        <item>P016StyleTheme</item>
+        <item>P017DrawableIcon</item>
+        <item>P018CanvasGball</item>
+        <item>P018BCanvas</item>
+        <item>P019WebView</item>
+        <item>P020TabHostTabSpec</item>
+        <item>P021FileOutputStream</item>
+        <item>P022AsyncTaskClass</item>
+        <item>P023Spinner</item>
+        <item>P024SqlLite</item>
+        <item>P025Dialog</item>
+        <item>P026AlertDialog</item>
+        <item>P027SQLiteDatabaseClass</item>
+        <item>P028SharedPreferences</item>
+        <item>P029InternalStorage</item>
+        <item>P030TeaspoonConversion</item>
+        <item>P031IntentServices</item>
+        <item>P032PreferencesNot</item>
+        <item>P033VideoView</item>
+        <item>P034GetDefaultSharedPreferences</item>
+        <item>P035Bitmap</item>
+    </string-array>
+
+    <string-array name="activity_names2">
+        <item>Activity One</item>
+        <item>Activity Two</item>
+        <item>Activity Three</item>
+        <item>Activity Four</item>
+        <item>Activity Five</item>
+        <item>Activity Six</item>
+        <item>Activity Seven</item>
+        <item>Activity Eight</item>
+        <item>Activity Nine</item>
+        <item>Activity Ten</item>
+
+    </string-array>
+
+
+</resources>

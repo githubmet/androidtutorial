@@ -1,6 +1,44 @@
 package com.example.kkldfkld.myapplication;
 
 import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.content.Intent;
+
+public class P000Menu extends ListActivity{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        String[] activityNames=getResources().getStringArray(R.array.activity_names);
+        ArrayAdapter arrayAdapter =new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,activityNames);
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        setListAdapter(arrayAdapter);
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+
+        String activityName="com.example.kkldfkld.myapplication."+l.getItemAtPosition(position);
+        try {
+            Class className=Class.forName(activityName);
+            Intent intent =new Intent(this,className);
+            startActivity(intent);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
+
+
+
+
+/*
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,13 +53,7 @@ public class P000Menu extends ListActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String activityNames[]={"P001ListActivity_extends_Activity","P001ListActivity2_extends_ListActivity","P002Intent","P003TextPlay",
-                "P004SetInputType","P005NormalMenuItem","P005PreferenceGetInfo","P006CoolMenuItem","P006PreferencesGetInfo","P007CreateUserFaceOnlyJavaCode",
-                "P007CreateUserFaceOnlyJavaCode2", "P008GridLayout_Implements_View_OnClickListener","P009ListViewCustomRow","P010GestureDetectorCompat" ,
-                "P011NotificationCompatBuilder","P012SharedPreferences","P013DrawableBitmapLayerDrawable", "P014EmailTasarim","P015RadioGroup","P016StyleTheme",
-                "P017DrawableIcon","P018CanvasGball","P018BCanvas","P019WebView","P020TabHostTabSpec","P021FileOutputStream","P022AsyncTaskClass","P023Spinner","P024SqlLite",
-                "P025Dialog","P026AlertDialog","P027SQLiteDatabaseClass","P028SharedPreferences","P029InternalStorage","P030TeaspoonConversion","P031IntentServices",
-                "P032PreferencesNot","P033VideoView","P034GetDefaultSharedPreferences","P035Bitmap"};
+        String activityNames[]=getResources().getStringArray(R.array.activity_names);
         ListAdapter listAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,activityNames);
         setListAdapter(listAdapter);
     }
@@ -42,6 +74,7 @@ public class P000Menu extends ListActivity{
 }
 
 
+*/
 
 
 
