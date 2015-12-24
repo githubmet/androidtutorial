@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.kkldfkld.myapplication.P005NormalMenuItem">
-
     <group android:checkableBehavior="single">
 
         <item
@@ -65,12 +64,6 @@
             android:id="@+id/menu_toastClass"
             android:title="toastClass"
             android:orderInCategory="10"
-            app:showAsAction="never"
-            />
-        <item
-            android:id="@+id/menu_preference"
-            android:orderInCategory="11"
-            android:title="Preferences"
             app:showAsAction="never"
             />
     </group>

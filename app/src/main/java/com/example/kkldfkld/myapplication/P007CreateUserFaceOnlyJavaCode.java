@@ -79,11 +79,6 @@ public class P007CreateUserFaceOnlyJavaCode extends Activity{
         relativeLayout.addView(textView);
 
         setContentView(relativeLayout);
-
-
-
-
-
     }
 }
 

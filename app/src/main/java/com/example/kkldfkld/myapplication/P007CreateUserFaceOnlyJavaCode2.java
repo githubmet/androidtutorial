@@ -45,10 +45,8 @@ public class P007CreateUserFaceOnlyJavaCode2 extends ActionBarActivity {
             case R.id.menu_bucky:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    Toast.makeText(this, "kontrol", Toast.LENGTH_SHORT).show();
                 } else {
                     item.setChecked(true);
-                    Toast.makeText(this, "kontrol222222", Toast.LENGTH_SHORT).show();
                 }
                 linearLayout.setBackgroundColor(Color.parseColor("#006699"));
                 return true;
@@ -135,15 +133,6 @@ public class P007CreateUserFaceOnlyJavaCode2 extends ActionBarActivity {
                 }
                 P005ToastClass p005ToastClass = new P005ToastClass();
                 p005ToastClass.makeSomeToast(P007CreateUserFaceOnlyJavaCode2.this, "Hello from my Toast Class");
-                return true;
-            case R.id.menu_preference:
-                if (item.isChecked()) {
-                    item.setChecked(false);
-                } else {
-                    item.setChecked(true);
-                }
-                Intent intentPref = new Intent("com.example.kkldfkld.myapplication.P005PREFERENCE");
-                startActivity(intentPref);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

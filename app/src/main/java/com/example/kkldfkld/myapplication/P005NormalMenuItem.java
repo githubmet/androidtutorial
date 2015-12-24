@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-
 public class P005NormalMenuItem extends ActionBarActivity {
     RelativeLayout relativeLayout;
     @Override
@@ -37,11 +36,9 @@ public class P005NormalMenuItem extends ActionBarActivity {
             case R.id.menu_bucky:
                 if(item.isChecked()){
                     item.setChecked(false);
-                    Toast.makeText(this,"kontrol",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     item.setChecked(true);
-                    Toast.makeText(this,"kontrol222222",Toast.LENGTH_SHORT).show();
                 }
                 relativeLayout.setBackgroundColor(Color.parseColor("#006699"));
                 return true;
@@ -138,16 +135,6 @@ public class P005NormalMenuItem extends ActionBarActivity {
                 P005ToastClass p005ToastClass=new P005ToastClass();
                 p005ToastClass.makeSomeToast(P005NormalMenuItem.this,"Hello from my Toast Class");
                 return true;
-            case R.id.menu_preference:
-                if(item.isChecked()){
-                    item.setChecked(false);
-                }
-                else{
-                    item.setChecked(true);
-                }
-                Intent intentPref=new Intent("com.example.kkldfkld.myapplication.P005PREFERENCE");
-                startActivity(intentPref);
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
 
@@ -157,9 +144,6 @@ public class P005NormalMenuItem extends ActionBarActivity {
 
     }
 }
-
-
-
 
 
 /*

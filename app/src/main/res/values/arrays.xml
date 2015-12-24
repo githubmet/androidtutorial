@@ -8,9 +8,9 @@
         <item>P003TextPlay</item>
         <item>P004SetInputType</item>
         <item>P005NormalMenuItem</item>
+        <item>P005Preference</item>
         <item>P005PreferenceGetInfo</item>
         <item>P006CoolMenuItem</item>
-        <item>P006PreferencesGetInfo</item>
         <item>P007CreateUserFaceOnlyJavaCode</item>
         <item>P007CreateUserFaceOnlyJavaCode2</item>
         <item>P008GridLayout_Implements_View_OnClickListener</item>
@@ -56,6 +56,18 @@
         <item>Activity Nine</item>
         <item>Activity Ten</item>
 
+    </string-array>
+
+    <string-array name="transportation_names_p005">
+        <item>Bicycle</item>
+        <item>Car</item>
+        <item>Truck</item>
+    </string-array>
+
+    <string-array name="transportation_values_p005">
+        <item>2 teker</item>
+        <item>4 teker</item>
+        <item>10 teker</item>
     </string-array>
 
 

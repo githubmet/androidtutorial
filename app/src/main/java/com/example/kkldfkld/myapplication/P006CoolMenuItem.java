@@ -91,7 +91,7 @@ public class P006CoolMenuItem extends Activity {
                 startActivity(intent); //Manifest dosyasinda intent-filter belirtmen gerekir
                 return true;
             case R.id.cool_menu2:
-                Intent intent2 =new Intent("com.example.kkldfkld.myapplication.P006PREFERENCEACTIVITY");
+                Intent intent2=new Intent(P006CoolMenuItem.this,P005Preference.class);
                 startActivity(intent2); //Manifest dosyasinda intent-filter belirtmen gerekir sebep abir ust satir
                 return true;
             case R.id.cool_menu3:

@@ -45,13 +45,8 @@
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>
-        <activity android:name=".P005Preference"
-            android:theme="@android:style/Theme.Dialog">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"></category>
-                <action android:name="com.example.kkldfkld.myapplication.P005PREFERENCE"></action>
-            </intent-filter>
-        </activity>
+
+        <activity android:name=".P005Preference" android:theme="@android:style/Theme.Dialog"></activity>
         <activity android:name=".P005PreferenceGetInfo"></activity>
 
         <activity android:name=".P006CoolMenuItem"></activity>
@@ -61,16 +56,8 @@
                 <category android:name="android.intent.category.DEFAULT"></category>
                 <action android:name="com.example.kkldfkld.myapplication.P006ABOUTHUS"></action>            </intent-filter>
         </activity>
-        <activity android:name=".P006PreferenceActivity"
-            android:theme="@android:style/Theme.Dialog">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"></category>
-                <action android:name="com.example.kkldfkld.myapplication.P006PREFERENCEACTIVITY"></action>
-            </intent-filter>
-        </activity>
 
-        <activity android:name=".P006PreferencesGetInfo"></activity>
-        <activity android:name=".P006MusicOn"></activity>
+
 
         <activity android:name=".P007CreateUserFaceOnlyJavaCode"></activity>
         <activity android:name=".P007CreateUserFaceOnlyJavaCode2"></activity>

@@ -1,6 +1,7 @@
 package com.example.kkldfkld.myapplication;
 
 
+/*
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class P008GridLayout_Implements_View_OnClickListener extends Activity imp
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pdeneme);
+        setContentView(R.layout.p008gridlayoutandimplements);
 
         button=(Button)findViewById(R.id.button);
         button2=(Button)findViewById(R.id.button2);
@@ -82,7 +83,8 @@ public class P008GridLayout_Implements_View_OnClickListener extends Activity imp
 }
 
 
-/*
+*/
+
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -153,4 +155,4 @@ public class P008GridLayout_Implements_View_OnClickListener extends Activity imp
         buttonMove2.setLayoutParams(buttonMoveKonum);
     }
 }
-*/
+

@@ -28,8 +28,8 @@ public class P004SetInputType extends Activity implements View.OnClickListener{
         toggleButton2P004.setOnClickListener(this);
 
 
-        editTextP004.setInputType(InputType.TYPE_CLASS_NUMBER);
-        editText2P004.setInputType(InputType.TYPE_CLASS_TEXT);
+        editTextP004.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_VARIATION_PASSWORD);
+        editText2P004.setInputType(InputType.TYPE_CLASS_TEXT |InputType.TYPE_TEXT_VARIATION_PASSWORD);
     }
 
     @Override

@@ -27,7 +27,7 @@
 
         >
     <Button
-        android:layout_weight="20"
+        android:layout_weight="50"
 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -35,13 +35,12 @@
         android:id="@+id/buttonResults" />
 
     <ToggleButton
-        android:layout_weight="80"
+        android:layout_weight="50"
 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="New ToggleButton"
         android:id="@+id/toggleButton"
-        android:checked="true"
+        android:checked="false"
 
          />
     </LinearLayout>
@@ -51,7 +50,6 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/textViewResults"
-        android:layout_gravity="center"
         />
 
 
