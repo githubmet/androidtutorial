@@ -1,5 +1,4 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -14,33 +13,10 @@
         <item name="android:gravity">center</item>
         <item name="android:text">Tum veriler values/style/.xml dosyasindan gelir</item>
     </style>
-
     <color name="specialColor">#b0c4de</color>
-    <style name="themeDeneme">
+    <style name="Theme.AppCompat.Dialog.themeDeneme">
         <item name="android:windowBackground">@color/specialColor</item>
     </style>
-
-
-
-
-
-
-
-<!--
-    <style name="LargeStyleDeneme">   &lt;!&ndash;style="@style/LargeStyleDeneme"&ndash;&gt;
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_centerVertical">true</item>
-        <item name="android:textSize">30dp</item>
-        <item name="android:textColor">#006699</item>
-        <item name="android:text">Tum veriler style.xml dosyasindan gelir</item>
-    </style>-->
-
-<!--
-    <color name="greendeneme">#009900</color>
-
-    <style name="themeDeneme">   &lt;!&ndash;android:theme="@style/themeDeneme"&ndash;&gt;
-        <item name="android:windowBackground">@color/greendeneme</item>
-    </style>-->
 
 
     <style name="BabyBlue">

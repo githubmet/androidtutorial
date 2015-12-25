@@ -54,7 +54,8 @@
         <activity android:name=".P006AbouthUs">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"></category>
-                <action android:name="com.example.kkldfkld.myapplication.P006ABOUTHUS"></action>            </intent-filter>
+                <action android:name="com.example.kkldfkld.myapplication.P006ABOUTHUS"></action>
+            </intent-filter>
         </activity>
 
 
@@ -77,7 +78,7 @@
         <activity android:name=".P015RadioGroup"></activity>
 
         <activity android:name=".P016StyleTheme"
-            android:theme="@style/themeDeneme"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog.themeDeneme"></activity>
 
         <activity android:name=".P017DrawableIcon"></activity>
 

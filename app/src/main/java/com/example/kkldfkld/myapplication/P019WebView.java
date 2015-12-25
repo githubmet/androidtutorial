@@ -1,6 +1,5 @@
 package com.example.kkldfkld.myapplication;
 
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -32,7 +31,6 @@ public class P019WebView extends Activity implements View.OnClickListener {
         buttonRefresh.setOnClickListener(this);
         buttonCleanHistory.setOnClickListener(this);
 
-        webViewBrowser=(WebView)findViewById(R.id.webViewBrowser);
         webViewBrowser.getSettings().setJavaScriptEnabled(true);
         webViewBrowser.getSettings().setLoadWithOverviewMode(true);
         webViewBrowser.getSettings().setUseWideViewPort(true);
@@ -53,7 +51,7 @@ public class P019WebView extends Activity implements View.OnClickListener {
                 String theUrl="http://"+editTextBrowse.getText().toString();
                 webViewBrowser.loadUrl(theUrl);
 
-                //this two line of code is abouth to delete vişrtual keyword!
+                //this two line of code is abouth to delete virtual keyword!
                 InputMethodManager inputMethodManager= (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 inputMethodManager.hideSoftInputFromWindow(editTextBrowse.getWindowToken(), 0);
 
@@ -77,85 +75,3 @@ public class P019WebView extends Activity implements View.OnClickListener {
         }
     }
 }
-
-
-
-
-/*
-import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
-import android.view.inputmethod.InputMethodManager;
-import android.webkit.WebView;
-import android.widget.EditText;
-import android.widget.Button;
-import android.view.View;
-
-public class P019WebView extends Activity implements View.OnClickListener {
-
-    WebView webViewBrowser;
-    EditText editTextBrowse;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.p019webview);
-
-        webViewBrowser= (WebView)findViewById(R.id.webViewBrowser);
-        webViewBrowser.getSettings().setJavaScriptEnabled(true);  //bu bir attribute
-        webViewBrowser.getSettings().setLoadWithOverviewMode(true); //bu bir attribute  zoom ile alakali
-        webViewBrowser.getSettings().setUseWideViewPort(true);
-//        webViewBrowser.setWebViewClient(new ourViewClient());
-        try {
-            webViewBrowser.loadUrl("http://www.google.com");
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-
-        editTextBrowse=(EditText)findViewById(R.id.editTextBrowse);
-        Button buttonBrowse= (Button)findViewById(R.id.buttonBrowse);
-        Button buttonGoBack= (Button)findViewById(R.id.buttonGoBack);
-        Button buttonGoForward= (Button)findViewById(R.id.buttonGoForward);
-        Button buttonRefresh= (Button)findViewById(R.id.buttonRefresh);
-        Button buttonCleanHistory= (Button)findViewById(R.id.buttonCleanHistory);
-
-        buttonBrowse.setOnClickListener(this);
-        buttonGoBack.setOnClickListener(this);
-        buttonGoForward.setOnClickListener(this);
-        buttonRefresh.setOnClickListener(this);
-        buttonCleanHistory.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-
-        switch (v.getId()){
-            case R.id.buttonBrowse:
-                String theWebUrl="http://"+ editTextBrowse.getText().toString();
-                webViewBrowser.loadUrl(theWebUrl);
-                //hiding keyword after using on EditText
-                InputMethodManager inputMethodManager= (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputMethodManager.hideSoftInputFromWindow(editTextBrowse.getWindowToken(),0); //bu iki kod satiri sanal keywordun otomatik kapanmasi icin
-                break;
-            case R.id.buttonGoBack:
-                if(webViewBrowser.canGoBack()) {  //dikkat kontrol icin bile method var
-                    webViewBrowser.goBack();  //hazir method var:):)
-                }
-                break;
-            case R.id.buttonGoForward:
-                if(webViewBrowser.canGoForward()){
-                    webViewBrowser.goForward();
-                }
-                break;
-            case R.id.buttonRefresh:
-                webViewBrowser.reload();
-                break;
-            case R.id.buttonCleanHistory:
-                webViewBrowser.clearHistory();
-                break;
-
-        }
-    }
-}
-*/

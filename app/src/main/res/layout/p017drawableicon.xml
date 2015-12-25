@@ -5,7 +5,7 @@
 
 
     <ImageButton
-        android:background="@drawable/p017deneme"
+        android:background="@drawable/p017drawableicon"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:layout_centerVertical="true" />
 
     <ImageButton
-        android:background="@drawable/p017deneme"
+        android:background="@drawable/p017drawableicon"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

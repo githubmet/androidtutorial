@@ -2,187 +2,77 @@ package com.example.kkldfkld.myapplication;
 
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.view.View;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Rect;
 import android.graphics.Paint;
+import android.graphics.drawable.BitmapDrawable;
+import android.view.View;
+
+import android.graphics.Rect;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
 
 public class P018Olaylar extends View {
 
+    int ustDeger;
+    int altDeger;
     public P018Olaylar(Context context) {
         super(context);
     }
 
-    float changingY;
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawColor(Color.parseColor("#006699"));
+        Rect rectTopLeft=new Rect(0,0,canvas.getWidth()/2,canvas.getHeight()/2);
+        Rect rectTopRight=new Rect(canvas.getWidth()/2,0,canvas.getWidth(),canvas.getHeight()/2);
 
-        Rect rectNoktalar=new Rect();
-        rectNoktalar.set(0, 0, canvas.getWidth() / 2, canvas.getHeight());
+        Rect rectBottomLeft=new Rect(0,canvas.getHeight()/2,canvas.getWidth()/2,canvas.getHeight());
+        Rect rectBottomRight=new Rect(canvas.getWidth()/2,canvas.getHeight()/2,canvas.getWidth(),canvas.getHeight());
 
-        Paint paint=new Paint();
-        paint.setColor(Color.WHITE);
-        canvas.drawRect(rectNoktalar, paint);
+        Paint paint =new Paint();
+        paint.setColor(Color.RED);
 
-        Rect rectNoktalar2=new Rect();
-        rectNoktalar2.set(canvas.getWidth() / 2, 0, canvas.getWidth(), canvas.getHeight());
-        Paint paint2=new Paint();
-        paint2.setColor(Color.GRAY);
-        canvas.drawRect(rectNoktalar2, paint2);
+        Paint paint2 =new Paint();
+        paint2.setColor(Color.GREEN);
 
-        Drawable drawable=getResources().getDrawable(R.drawable.bulleticon);
+        Paint paint3 =new Paint();
+        paint3.setColor(Color.BLUE);
+
+        Paint paint4 =new Paint();
+        paint4.setColor(Color.GRAY);
+
+        canvas.drawRect(rectTopLeft, paint);
+        canvas.drawRect(rectTopRight, paint2);
+        canvas.drawRect(rectBottomLeft, paint3);
+        canvas.drawRect(rectBottomRight, paint4);
+
+
+        Drawable drawable= getResources().getDrawable(R.drawable.icon_top);
         Bitmap bitmap= ((BitmapDrawable)drawable).getBitmap();
-        canvas.drawBitmap(bitmap,0,changingY,null);
 
-         Bitmap bitmap22= BitmapFactory.decodeResource(getResources(),R.drawable.bulleticon);
-        canvas.drawBitmap(bitmap22,canvas.getWidth()/2,changingY,null);
+        canvas.drawBitmap(bitmap,canvas.getWidth()/4-128,ustDeger,null);
 
+        canvas.drawBitmap(bitmap,(canvas.getWidth()/4)*3-128,ustDeger,null);
 
-        if(changingY<canvas.getHeight()){
-            changingY=changingY+10;
+        canvas.drawBitmap(bitmap,canvas.getWidth()/4-128,altDeger,null);
+
+        canvas.drawBitmap(bitmap,(canvas.getWidth()/4)*3-128,altDeger,null);
+        //canvas.drawRect();
+
+        if(ustDeger<canvas.getHeight()/2-256){
+            ustDeger=ustDeger+10;
         }
         else{
-            changingY=0;
+            ustDeger=0;
         }
 
+        if(altDeger<canvas.getHeight()-256){
+            altDeger=altDeger+10;
+        }
+        else{
+            altDeger=canvas.getHeight()/2;
+        }
         invalidate();
     }
 }
-
-
-
-
-
-
-/*
-
-import android.content.Context;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.view.View;
-import android.graphics.Bitmap;
-import android.graphics.Rect;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.drawable.Drawable;
-
-
-public class P018Olaylar extends View {
-
-    Bitmap gBall;
-
-    float changingY;
-
-    //this is a reciever  Cunstructor
-    public P018Olaylar(Context context) {
-        super(context);
-        gBall= BitmapFactory.decodeResource(getResources(),R.drawable.bulleticon);
-    }
-
-    //Canvas is the background what ever has
-    @Override
-    protected void onDraw(Canvas canvas) { //Canvas background ile alakali
-        super.onDraw(canvas);
-        canvas.drawColor(Color.WHITE); //senin yaptigin gibi surekli ciziyor
-        //canvas.drawBitmap(gBall,(canvas.getWidth())/2,0,null);  //parametreler x y kordinatlaridir.
-        //ekranin ortasindan ve en alta kadar diye kordinatladik  -->sonu en ustte ve ekranin ortasinda bir yeil top
-
-        //hareketli top
-        canvas.drawBitmap(gBall,(canvas.getWidth())/2,changingY,null);
-        if(changingY <canvas.getHeight()){
-            changingY +=10;
-        }
-        else{
-            changingY=0;
-        }
-
-
-        Rect rect= new Rect();
-        rect.set(0, (canvas.getHeight()) / 2, canvas.getWidth(), 300);
-
-        Paint paint=new Paint();
-        paint.setColor(Color.CYAN);
-        canvas.drawRect(rect, paint);
-
-        //ikinci rectangle
-        Rect rect2=new Rect();
-        rect2.set(0, 0, canvas.getWidth() / 2, canvas.getHeight());
-        Paint paint2=new Paint();
-        paint2.setColor(Color.GRAY);
-        canvas.drawRect(rect2,paint2);
-
-        //hareketli resim
-        Drawable drawable=getResources().getDrawable(R.drawable.bulleticon);
-        Bitmap bitmap=((BitmapDrawable)drawable).getBitmap();
-        canvas.drawBitmap(bitmap,0,changingY,null);
-
-
-        invalidate(); //do it over again  gibi
-    }
-}
-
-*/
-
-//
-//package com.example.kkldfkld.myapplication2;
-//
-//        import android.content.Context;
-//        import android.graphics.BitmapFactory;
-//        import android.graphics.Canvas;
-//        import android.graphics.Color;
-//        import android.view.View;
-//        import android.graphics.Bitmap;
-//        import android.graphics.Rect;
-//        import android.graphics.Color;
-//        import android.graphics.Paint;
-//
-//public class P03MyBringBack extends View {
-//
-//    Bitmap gBall;
-//
-//    float changingY;
-//
-//    //this is a reciever  Cunstructor
-//    public P03MyBringBack(Context context) {
-//        super(context);
-//        gBall= BitmapFactory.decodeResource(getResources(),R.drawable.bulleticon);
-//    }
-//
-//    //Canvas is the background what ever has
-//    @Override
-//    protected void onDraw(Canvas canvas) {
-//        super.onDraw(canvas);
-//        canvas.drawColor(Color.WHITE);
-//        //canvas.drawBitmap(gBall,(canvas.getWidth())/2,0,null);
-//
-//
-//        //hareketli top
-//        canvas.drawBitmap(gBall,(canvas.getWidth())/2,changingY,null);
-//        if(changingY <canvas.getHeight()){
-//            changingY +=10;
-//        }
-//        else{
-//            changingY=0;
-//        }
-//
-//        //rectangle alan ciz
-//        Rect rect= new Rect();
-//        rect.set(0, canvas.getHeight() / 2, canvas.getWidth(), 300);
-//
-//        Paint paint=new Paint();
-//        paint.setColor(Color.CYAN);
-//        canvas.drawRect(rect,paint);
-//
-//        invalidate(); //do it over again  gibi
-//    }
-//}
