@@ -70,5 +70,18 @@
         <item>10 teker</item>
     </string-array>
 
+    <string-array name="teams_names_p009">
+        <item>Alfreton</item>
+        <item>Braintree</item>
+        <item>Cheltenham</item>
+        <item>Coventry</item>
+        <item>Crawley</item>
+        <item>Fleetwood</item>
+        <item>Grimsby</item>
+        <item>Huddersfield</item>
+        <item>Hull</item>
+        <item>Manchester</item>
+    </string-array>
+
 
 </resources>

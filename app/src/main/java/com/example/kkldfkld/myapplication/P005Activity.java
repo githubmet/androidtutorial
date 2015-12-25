@@ -29,32 +29,3 @@ public class P005Activity extends Activity {
         setContentView(relativeLayout);
     }
 }
-
-/*import android.app.Activity;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.widget.TextView;
-import android.widget.RelativeLayout;
-public class P005Activity extends Activity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        RelativeLayout relativeLayout=new RelativeLayout(this);
-        relativeLayout.setBackgroundColor(Color.CYAN);
-
-        TextView textView=new TextView(this);
-        textView.setText("Hi from MenuItem");
-
-        RelativeLayout.LayoutParams textViewKonum=new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT
-        );
-        textViewKonum.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        textViewKonum.addRule(RelativeLayout.CENTER_VERTICAL);
-//        textView.setLayoutParams(textViewKonum);  bu sekilde daha profesyonel
-        relativeLayout.addView(textView,textViewKonum);
-
-        setContentView(relativeLayout);
-    }
-}*/
