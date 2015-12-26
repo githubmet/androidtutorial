@@ -10,8 +10,8 @@
         android:key="pref_text_size"
         android:title="Text Size"
         android:summary="Pick the text size"
-        android:entries="@array/text_size_entries"
-        android:entryValues="@array/text_size_values"
+        android:entries="@array/text_size_name"
+        android:entryValues="@array/text_size_value"
         android:defaultValue="16"/>
 
 </PreferenceScreen>

@@ -7,7 +7,7 @@ public class P032SettingActivity extends PreferenceActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.p32settingactivity2);
+        addPreferencesFromResource(R.xml.p032preferences);
     }
 }
 

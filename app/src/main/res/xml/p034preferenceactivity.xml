@@ -11,8 +11,8 @@
         android:key="ListPrefernceTextSize"
         android:title="Specify Text Size"
         android:summary="Please, select text size"
-        android:entries="@array/text_size_name2"
-        android:entryValues="@array/text_size_value2"
+        android:entries="@array/text_size_name"
+        android:entryValues="@array/text_size_value"
         android:defaultValue="16" />
 
 </PreferenceScreen>

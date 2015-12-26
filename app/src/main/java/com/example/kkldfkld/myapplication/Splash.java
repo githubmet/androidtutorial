@@ -22,7 +22,7 @@ public class Splash extends Activity {  //public means accessable the other clas
                   e.printStackTrace();
               }
               finally{
-                  Intent intent =new Intent("com.example.kkldfkld.myapplication.MENU");
+                  Intent intent =new Intent(Splash.this,P000Menu.class);//("com.example.kkldfkld.myapplication.MENU");
                   startActivity(intent);
               }
           }

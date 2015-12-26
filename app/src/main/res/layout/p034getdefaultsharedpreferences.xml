@@ -5,20 +5,24 @@
     android:padding="10dp">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Settings"
-        android:id="@+id/buttonSettingsP034" />
+        android:id="@+id/buttonSettingsP034"
+
+        android:gravity="left|center"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Get TextMode"
         android:id="@+id/buttonTextModeP034" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Get TextSize"
-        android:id="@+id/buttonTextSizeP034" />
+        android:id="@+id/buttonTextSizeP034"
+
+        android:gravity="right|center"/>
 
     <EditText
         android:layout_width="match_parent"

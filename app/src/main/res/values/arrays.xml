@@ -30,18 +30,15 @@
         <item>P021FileOutputStream</item>
         <item>P022AsyncTaskClass</item>
         <item>P023Spinner</item>
-        <item>P024SqlLite</item>
         <item>P025Dialog</item>
         <item>P026AlertDialog</item>
         <item>P027SQLiteDatabaseClass</item>
         <item>P028SharedPreferences</item>
         <item>P029InternalStorage</item>
         <item>P030TeaspoonConversion</item>
-        <item>P031IntentServices</item>
         <item>P032PreferencesNot</item>
         <item>P033VideoView</item>
         <item>P034GetDefaultSharedPreferences</item>
-        <item>P035Bitmap</item>
     </string-array>
 
     <string-array name="activity_names2">
@@ -58,18 +55,6 @@
 
     </string-array>
 
-    <string-array name="transportation_names_p005">
-        <item>Bicycle</item>
-        <item>Car</item>
-        <item>Truck</item>
-    </string-array>
-
-    <string-array name="transportation_values_p005">
-        <item>2 teker</item>
-        <item>4 teker</item>
-        <item>10 teker</item>
-    </string-array>
-
     <string-array name="teams_names_p009">
         <item>Alfreton</item>
         <item>Braintree</item>
@@ -83,6 +68,71 @@
         <item>Manchester</item>
     </string-array>
 
+    <string-array name="name">
+        <item>2 teker</item>
+        <item>3 teker</item>
+        <item>4 teker</item>
+        <item>6 teker</item>
+        <item>10 teker</item>
+    </string-array>
+    <string-array name="value">
+        <item>Bisiklet</item>
+        <item>El Arabasi</item>
+        <item>Otomobil</item>
+        <item>Kamyon</item>
+        <item>Tir</item>
+    </string-array>
 
+    <string-array name="text_size_name">
+        <item>16 pt</item>
+        <item>18 pt</item>
+        <item>20 pt</item>
+        <item>22 pt</item>
+        <item>24 pt</item>
+        <item>26 pt</item>
+    </string-array>
 
+    <string-array name="text_size_value">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="array_text_name">
+
+        <item>16 pt</item>
+        <item>18 pt</item>
+        <item>20 pt</item>
+        <item>22 pt</item>
+        <item>24 pt</item>
+
+    </string-array>
+
+    <string-array name="array_text_value">
+
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+
+    </string-array>
+
+    <string-array name="concersion_types">
+        <item>teaspoon</item>
+        <item>tablespoon</item>
+        <item>cup</item>
+        <item>ounce</item>
+        <item>pint</item>
+        <item>quart</item>
+        <item>gallon</item>
+        <item>pound</item>
+        <item>milliliter</item>
+        <item>liter</item>
+        <item>milligram</item>
+        <item>kilogram</item>
+    </string-array>
 </resources>

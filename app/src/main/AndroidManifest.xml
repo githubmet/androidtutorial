@@ -12,13 +12,17 @@
         >
 
         <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".P000Menu"
             android:label="@string/app_name"
             android:theme="@style/BabyBlue.BigBlue">
-            <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"></category>
-                <action android:name="android.intent.action.MAIN"></action>
-            </intent-filter>
         </activity>
 
         <activity android:name=".P001ListActivity2_extends_ListActivity"></activity>
@@ -58,8 +62,6 @@
             </intent-filter>
         </activity>
 
-
-
         <activity android:name=".P007CreateUserFaceOnlyJavaCode"></activity>
         <activity android:name=".P007CreateUserFaceOnlyJavaCode2"></activity>
 
@@ -95,14 +97,6 @@
 
         <activity android:name=".P023Spinner"></activity>
 
-        <activity android:name=".P024SqlLite"></activity>
-        <activity android:name=".P024SqlView">
-            <intent-filter>
-                <action android:name="com.example.kkldfkld.myapplication.P024SQLVIEW"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-            </intent-filter>
-        </activity>
-
         <activity android:name=".P025Dialog"></activity>
 
         <activity android:name=".P026AlertDialog"></activity>
@@ -127,271 +121,12 @@
 
 
         <activity android:name=".P014EmailTasarim"></activity>
-        <activity android:name=".P031IntentServices"></activity>
         <activity android:name=".P033VideoView"></activity>
-        <activity android:name=".P035Bitmap"></activity>
 
     </application>
 
 </manifest>
 
-
-        <!--  ######
-                <activity
-                    android:name=".Splash"
-                    android:label="@string/app_name" >
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter>
-                </activity>
-        -->
-<!--
-        <activity
-            android:name=".P000Menu"
-            android:label="@string/app_name"
-            android:theme="@style/AlertDialog.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".P001ListActivity_extends_Activity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P001ListActivity2_extends_ListActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P002Intent"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P002IntentYakala"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P002IntentYakalaCheckBox"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P003TextPlay"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P004SetInputType"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P005NormalMenuItem"
-            android:label="@string/hello_world" > &lt;!&ndash; ActionBarActivity kullanildiginda bize bulundugumuz Activity adini verir&ndash;&gt;
-        </activity>
-        <activity
-            android:name=".P005Activity">
-            <intent-filter>
-                <action android:name="com.example.kkldfkld.myapplication.P005ACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".P005Activity2">
-            <intent-filter>
-                <action android:name="com.example.kkldfkld.myapplication.P005ACTIVITY2" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".P006CoolMenuItem"
-            android:label="@string/app_name">
-        </activity>
-        <activity
-            android:name=".P006AbouthUs"
-            android:theme="@android:style/Theme.Dialog" >  &lt;!&ndash;Activity icin cool theme lardan birini elde ediyoruz&ndash;&gt;
-            <intent-filter>
-                <action android:name="com.example.kkldfkld.myapplication.P006ABOUTHUS" />  &lt;!&ndash;eger intent parametresi sadece String bir ifade ile yonlendirilirse &ndash;&gt;
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".P006PreferenceActivity"
-            android:theme="@android:style/Theme.Dialog" >  &lt;!&ndash;Activity icin cool theme lardan birini elde ediyoruz&ndash;&gt;
-            <intent-filter>
-                <action android:name="com.example.kkldfkld.myapplication.P006PREFERENCEACTIVITY" /> &lt;!&ndash;eger intent parametresi sadece String bir ifade ile yonlendirilirse &ndash;&gt;
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".P006PreferencesGetInfo"
-            android:label="@string/app_name">
-        </activity>
-        <activity
-            android:name=".P006MusicOn"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P007CreateUserFaceOnlyJavaCode"
-            android:label="@string/app_name" >
-        </activity>
-
-        <activity
-            android:name=".P007CreateUserFaceOnlyJavaCode2"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P008GridLayout_Implements_View_OnClickListener"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P009ListViewCustomRow"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P010GestureDetectorCompat"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P011NotificationCompatBuilder"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P012SharedPreferences"
-            android:label="@string/app_name"
-
-            android:theme="@style/themeDeneme" >
-        </activity>
-        <activity
-            android:name=".P013DrawableBitmapLayerDrawable"
-            android:label="@string/app_name" >
-        </activity>
-
-        <activity
-            android:name=".P014EmailTasarim"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P015RadioGroup"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P016StyleTheme"
-            android:label="@string/app_name"
-
-            android:theme="@style/themeDeneme" >
-        </activity>
-        <activity
-            android:name=".P017DrawableIcon"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P018CanvasGball"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P019WebView"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P020TabHostTabSpec"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P021FileOutputStream"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P022AsyncTaskClass"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P023Spinner"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P024SqlLite"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P024SqlView"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.kkldfkld.myapplication.P024SQLVIEW" />  &lt;!&ndash;eger intent parametresi sadece String bir ifade ile yonlendirilirse &ndash;&gt;
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".P025Dialog"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P026AlertDialog"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P027SQLiteDatabaseClass"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P028SharedPreferences"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P028NextActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P029InternalStorage"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P029NextActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P030TeaspoonConversion"
-            android:label="@string/app_name" >
-        </activity>
-
-
-        <service android:name=".P031FileService" android:exported="false"/>
-
-        <activity
-            android:name=".P031IntentServices"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P032PreferencesNot"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P032SettingActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".P033VideoView"
-            android:label="@string/app_name" >
-        </activity>
-
-        <activity
-            android:name=".P034GetDefaultSharedPreferences"
-            android:label="@string/app_name">
-        </activity>
-
-        <activity
-            android:name=".P034PreferenceActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-        <activity
-            android:name=".P035Bitmap"
-            android:label="@string/app_name">
-        </activity>
-
-    </application>
-
-</manifest>
-        -->
     <!--android:screenOrientation="portrait">  Activity ekranini sabitler-->
     <!--android:theme="@style/jungle_theme">  Activity theme custom olarak sen tasarla!... -->
 

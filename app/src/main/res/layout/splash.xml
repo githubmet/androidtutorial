@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009900"
+    android:background="#b0c4de"
     >
 
-</LinearLayout>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/thenewboston"
+        android:textColor="#FFF"
+        android:layout_centerInParent="true">
+    </TextView>
+
+</RelativeLayout>

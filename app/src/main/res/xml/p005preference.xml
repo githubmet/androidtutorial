@@ -23,8 +23,8 @@
         android:title="List of transport"
         android:summary="please, select your transport choices"
         android:key="listPreferenceTransport"
-        android:entries="@array/transportation_names_p005"
-        android:entryValues="@array/transportation_values_p005"
+        android:entries="@array/name"
+        android:entryValues="@array/value"
         android:defaultValue="Yaya is default value">
     </ListPreference>
 
