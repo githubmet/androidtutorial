@@ -23,7 +23,6 @@ public class P007CreateUserFaceOnlyJavaCode extends Activity{
         button.setText("Hello World");
         button.setId(1234);
 
-
         RelativeLayout.LayoutParams buttonKonum=new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
                 RelativeLayout.LayoutParams.WRAP_CONTENT

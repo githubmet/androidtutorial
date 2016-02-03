@@ -19,7 +19,7 @@ public class P002IntentYakala extends Activity {
 
         Intent intent= getIntent();
         Bundle bundle= intent.getExtras();
-        String veri= bundle.getString("bohca");
+        String veri= bundle.getString(P002Intent.KEY_VERI);
         textView.setText(veri);
 
         RelativeLayout.LayoutParams textViewKonum= new RelativeLayout.LayoutParams(

@@ -9,7 +9,8 @@ import android.content.Intent;
 import android.view.View;
 
 public class P002Intent extends Activity {
-
+    public static final String KEY_VERI="com.example.kkldfkld.myapplication.VERI";
+    public static final String KEY_BOOLEAN_VERI="com.example.kkldfkld.myapplication.BOOLEAN_VERI";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +21,7 @@ public class P002Intent extends Activity {
         EditText editTextP002=(EditText)findViewById(R.id.editTextP002);
         String veri=editTextP002.getText().toString();
         Intent intent =new Intent(this,P002IntentYakala.class);
-        intent.putExtra("bohca",veri);
+        intent.putExtra(KEY_VERI,veri);
         startActivity(intent);
     }
     public void onClickP002Mtd2(View view){
@@ -30,7 +31,7 @@ public class P002Intent extends Activity {
         try {
             Class className=Class.forName("com.example.kkldfkld.myapplication.P002IntentYakalaCheckBox");
             Intent intent =new Intent(this,className);
-            intent.putExtra("boolean",deger);
+            intent.putExtra(KEY_BOOLEAN_VERI,deger);
             startActivity(intent);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

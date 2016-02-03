@@ -13,7 +13,8 @@
         android:summary="please, enter your surname">
     </EditTextPreference>
 
-    <CheckBoxPreference android:title="Music On/Off"
+    <CheckBoxPreference
+        android:title="Music On/Off"
         android:key="checkBoxPreferenceMusic2"
         android:summary="please, select your music preference"
         android:defaultValue="true">
@@ -27,8 +28,5 @@
         android:entryValues="@array/value"
         android:defaultValue="Yaya is default value">
     </ListPreference>
-
-
-
 
 </PreferenceScreen>

@@ -24,8 +24,9 @@ public class P002IntentYakalaCheckBox extends Activity {
         textView.setLayoutParams(textViewKonum);
 
         Intent intent=getIntent();
-        Bundle bundle= intent.getExtras();
-        Boolean gelenVeri= bundle.getBoolean("boolean",false);
+        Boolean gelenVeri=intent.getBooleanExtra(P002Intent.KEY_BOOLEAN_VERI, false);  //bu sekilde de olur.
+        //Bundle bundle= intent.getExtras();
+        //Boolean gelenVeri= bundle.getBoolean(P002Intent.KEY_BOOLEAN_VERI,false);
         textView.setText(gelenVeri.toString().toUpperCase());
 
         relativeLayout.addView(textView);

@@ -37,31 +37,22 @@ public class P026AlertDialog extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        AlertDialog alertDialog= new AlertDialog.Builder(P026AlertDialog.this).create();
-        alertDialog.setTitle("Welcome to AlertDialog landscape");
-        alertDialog.setMessage("Please, select your message Box");
+        AlertDialog.Builder builder=new AlertDialog.Builder(P026AlertDialog.this);
+        builder.setTitle("Welcome to AlertDialog landscape");
+        builder.setMessage("Are you ok?");
 
-        alertDialog.setButton("Message Box 1", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(P026AlertDialog.this, "Message One", Toast.LENGTH_SHORT).show();
+                Toast.makeText(P026AlertDialog.this,"Good for you",Toast.LENGTH_SHORT).show();
             }
         });
-
-        alertDialog.setButton2("Message Box 2", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(P026AlertDialog.this, "Message Two", Toast.LENGTH_SHORT).show();
+                Toast.makeText(P026AlertDialog.this,"Bad for you",Toast.LENGTH_SHORT).show();
             }
         });
-
-        alertDialog.setButton3("Message Box 3", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(P026AlertDialog.this, "Message Three", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        alertDialog.show();
+        builder.show();
     }
 }

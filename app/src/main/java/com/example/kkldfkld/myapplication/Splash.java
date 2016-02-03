@@ -12,7 +12,6 @@ public class Splash extends Activity {  //public means accessable the other clas
         super.onCreate(TravisLoveBacon);
 
         setContentView(R.layout.splash);   //olusturdugumuz layout content olarak yaz
-
         Thread thread=new Thread(){
           public void run(){
               try{
@@ -28,7 +27,6 @@ public class Splash extends Activity {  //public means accessable the other clas
           }
         };
         thread.start();  //bunu unuttun
-
     }
 
     @Override
@@ -37,3 +35,22 @@ public class Splash extends Activity {  //public means accessable the other clas
         finish();
     }
 }
+
+/*
+new Runnable(){  //tek basina kullanildiginda  .run() methodunu cagirman gerekir:
+@Override
+public void run() {
+try{
+Thread.sleep(3000);
+Class className= Class.forName("com.example.kkldfkld.myapplication.P000Menu");
+Intent intent =new Intent(Splash.this,className);
+startActivity(intent);
+}
+catch(InterruptedException e){
+e.printStackTrace();
+} catch (ClassNotFoundException e) {
+e.printStackTrace();
+}
+}
+}.run();
+*/

@@ -13,7 +13,6 @@ public class P008GridLayout_Implements_View_OnClickListener extends Activity imp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.p008gridlayoutandimplements);
 
-
         Button buttonLeft= (Button)findViewById(R.id.buttonLeft);
         buttonLeft.setOnClickListener(this);  //implements yaptiktan sonra sadece this demek yetiyor
 

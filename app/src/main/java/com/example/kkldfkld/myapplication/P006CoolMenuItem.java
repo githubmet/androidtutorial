@@ -25,7 +25,7 @@ public class P006CoolMenuItem extends Activity {
 
         MenuInflater menuInflater=new MenuInflater(P006CoolMenuItem.this);  //dikkat menu de bir Activity dir
         menuInflater.inflate(R.menu.p006coolmenuitem, menu);
-        return super.onCreateOptionsMenu(menu);
+        return super.onCreateOptionsMenu(menu);  //bu sayede tel tus devrede
     }
 
     @Override

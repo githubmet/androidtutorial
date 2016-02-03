@@ -29,11 +29,9 @@ public class P003TextPlay extends Activity implements View.OnClickListener {
         toggleButton=(ToggleButton)findViewById(R.id.toggleButton);
 
         buttonResults.setOnClickListener(this);
-
         toggleButton.setOnClickListener(this);
 
         editTextCommands= (EditText)findViewById(R.id.editTextCommands);
-        editTextCommands.setInputType(InputType.TYPE_TEXT_VARIATION_NORMAL | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         textViewResults=(TextView)findViewById(R.id.textViewResults);
     }
 
@@ -84,11 +82,11 @@ public class P003TextPlay extends Activity implements View.OnClickListener {
                 }
                 break;
             case R.id.toggleButton:
-                if(!toggleButton.isChecked()){
-                    editTextCommands.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                if(toggleButton.isChecked()){
+                    editTextCommands.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_NORMAL);  //Tam tanimlama yapmalisin
                 }
                 else{
-                    editTextCommands.setInputType(InputType.TYPE_TEXT_VARIATION_NORMAL);
+                    editTextCommands.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 }
                 break;
         }

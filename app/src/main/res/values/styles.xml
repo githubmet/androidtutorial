@@ -19,14 +19,14 @@
     </style>
 
 
-    <style name="BabyBlue">
+    <style name="BabyBlue" parent="Theme.AppCompat.NoActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#efefef</item>
         <item name="android:background">#006699</item>
     </style>
     <style name="BabyBlue.BigBlue">  <!--bu iki style sadece style da kalitimin nasil yapildiginin bir gostergesidir -->
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 

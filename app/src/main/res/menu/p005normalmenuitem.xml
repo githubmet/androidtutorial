@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.kkldfkld.myapplication.P005NormalMenuItem">
     <group android:checkableBehavior="single">
-
         <item
             android:id="@+id/menu_bucky"
             android:title="006699"
             android:orderInCategory="1"
             app:showAsAction="never"
             />
-
         <item
             android:id="@+id/menu_green"
             android:title="009900"
