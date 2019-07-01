@@ -19,8 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".P000Menu"
-            android:theme="@style/BabyBlue.BigBlue">
+            android:name=".P000Menu">
         </activity>
 
         <activity android:name=".P001ListActivity2_extends_ListActivity"></activity>

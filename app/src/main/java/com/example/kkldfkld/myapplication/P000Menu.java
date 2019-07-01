@@ -14,7 +14,6 @@ public class P000Menu extends ListActivity{
 
         String[] activityNames=getResources().getStringArray(R.array.activity_names);
         ArrayAdapter arrayAdapter =new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,activityNames);
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         setListAdapter(arrayAdapter);
         //arrayAdapter.addAll(activityNames); seklinde de olabilir.
     }

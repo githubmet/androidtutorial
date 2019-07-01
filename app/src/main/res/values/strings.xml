@@ -1,13 +1,9 @@
 <resources>
-    <string name="app_name">androidtutorial</string>
-
-
+    <string name="app_name">H</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
     <string name="hello">Hello world, starting point</string>
     <string name="hello_world2">Hello world2!</string>
-
     <string name="wanna_text">I wanna run away with you</string>
     <string name="dontwanna_text">I dont wanna let you down</string>
     <string name="string_never">You never give up!</string>
